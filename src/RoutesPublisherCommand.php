@@ -42,7 +42,7 @@ class RoutesPublisherCommand extends Command
     /**
      * Create a new command instance.
      *
-     * @return void
+     * @param Application $application
      */
     public function __construct(Application $application)
     {
@@ -166,6 +166,7 @@ class RoutesPublisherCommand extends Command
      * @param string $initialSpace
      *
      * @return string
+     * @throws \ReflectionException
      */
     private function extractController($path, $controller, $initialSpace = '')
     {
