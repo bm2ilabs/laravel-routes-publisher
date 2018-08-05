@@ -37,7 +37,7 @@ class RoutesPublisherCommand extends Command
      *
      * @var string
      */
-    public $routesFilePath = 'app/Http/routes.php';
+    public $routesFilePath = 'routes/web.php';
 
     /**
      * Create a new command instance.
